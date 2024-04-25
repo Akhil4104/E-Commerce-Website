@@ -1,0 +1,273 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    font-family: "Urbanist", sans-serif;
+    line-height: 1.5;
+    font-weight: 400;  
+    --buttonColor: #2a2c30;
+    --secondaryColor: #4b4f56;
+    --borderColor: #e3eaf0;
+    --backgroundColor: #f7f7f7;
+    --backgroundSecondary: #fefefe;
+    --textColor: #1e1f23;
+    --anchorColor: #535bf2;
+    --main-color: #535bf2;
+    --supporting-color: #ebf3fe;
+    --glow-color: hsl(186, 91%, 4%);
+  }
+  
+  html {
+    font-size: 62.5%;
+    color: var(--textColor);
+  }
+  body {
+    margin: 0 auto;
+    padding: 0 32px;
+    min-width: 320px;
+    background-color: var(--backgroundColor);
+  }
+  .top_txt {
+    background-color: var(--buttonColor);
+    color: var(--backgroundColor);
+  
+    & .head_txt p {
+      font-size: 1.5rem;
+    }
+  
+    & .sing_in_up {
+      display: flex;
+      gap: 3.2rem;
+    }
+  }
+  
+  p,
+  li,
+  a,
+  label {
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    color: var(--para-color);
+    line-height: 1.5;
+    font-weight: 400;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    color: #646cff;
+    text-decoration: none;
+    &:hover {
+      color: #535bf2;
+    }
+  }
+  
+  ::placeholder {
+    font-family: "Urbanist", sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+  
+  .container {
+    max-width: 142rem;
+    margin: 0 auto;
+    padding: 1.6rem 0.4rem;
+  }
+  .a:hover {
+    background-color:#273fa1;
+    cursor: pointer;
+  }
+  
+  .btn:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid var(--para-color);
+  }  
+  .navbar{
+    font-family:calibri; 
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .logo a{
+    font-size:35px;
+    font-weight:600;
+    color:#273fa1;
+  }
+  li{
+    list-style:none;
+    display: inline-block;
+  }
+  li a{
+    color: #273fa1;
+    font-size: 18px;
+    font-weight:bold;
+    margin-right: 25px;
+  }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .section-navbar {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-item {
+    list-style-type: none;
+    margin-right: 20px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Cart page specific styles */
+  .cart-container {
+    margin-top: 3rem;
+  }
+  
+  .back-homepage {
+    display: flex;
+    align-items: center;
+  }
+  
+  .back-homepage .bx {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .back-homepage span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .cart-s-title {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  
+  .cart-box {
+    display: flex;
+  }
+  
+  .cart-data {
+    flex: 1;
+  }
+  
+  .cart-t {
+    flex: 0 0 30%;
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  .cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .cart-item-title {
+    font-size: 1.3rem;
+    margin-left: 10px;
+  }
+  
+  .cart-item-quantity {
+    border: 1px solid #333;
+    outline-color: #273fa1;
+    width: 2.8rem;
+    text-align: center;
+    border-radius: 4px;
+    margin-left: 10px;
+  }
+  
+  .checkout-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #273fa1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #1d2d5d;
+  }
+  
+  .section-footer {
+    background-color: #333; /* Set background color for the footer */
+    color: #fff; /* Set text color for the footer */
+    padding: 3rem 0; /* Add padding for better spacing */
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between; /* Align sections evenly */
+  }
+  
+  .footer-section {
+    flex: 1; /* Allow sections to grow equally */
+  }
+  
+  .footer-section h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-section ul li a {
+    color: #fff; /* Set link color */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Add smooth transition */
+  }
+  
+  .footer-section ul li a:hover {
+    color: #ff6600; /* Change link color on hover */
+  }

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="section-navbar">
+      <nav class="navbar">
+        <div class="container">
+          <div class="logo"><a href="index.html" class="logo">Costy</a></div>
+          <ul>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="products.html" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="cart.html"
+                class="nav-link add-to-cart-button"
+                id="cartValue"
+              >
+                <i class="bx bxs-shopping-bag">0</i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <h1>Contact Us</h1>
+    <p>We are here to help you. Please fill out the form below:</p>
+    <form action="/contact" method="POST">
+      <div>
+        <label for="username">Full Name:</label>
+        <input type="text" id="username" name="username" required />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required />
+      </div>
+      <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+      <h1>E-Commerce Frequently Asked Questions</h1>
+      <div class="faq-container">
+        <div class="faq">
+          <h3 class="faq-title">What is your return policy?</h3>
+          <p class="faq-text">
+            Our return policy allows you to return products within 30 days of
+            receipt. The products must be in their original condition and
+            packaging to be eligible for a refund or exchange.
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="faq">
+          <h3 class="faq-title">How long does shipping take?</h3>
+          <p class="faq-text">
+            Standard shipping takes 5-7 business days within the continental US.
+            Expedited shipping options are available for an additional cost.
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="faq">
+          <h3 class="faq-title">How do I track my order?</h3>
+          <p class="faq-text">
+            Once your order is shipped, you will receive a tracking number via
+            email. You can use this tracking number to check the status of your
+            shipment on our website.
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="faq">
+          <h3 class="faq-title">What payment methods do you accept?</h3>
+          <p class="faq-text">
+            We accept a variety of payment methods, including credit and debit
+            cards (Visa, MasterCard, American Express), PayPal, and Apple Pay.
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="faq">
+          <h3 class="faq-title">How can I contact customer service?</h3>
+          <p class="faq-text">
+            You can reach our customer service team via email at
+            support@example.com or by phone at (123) 456-7890. Our team is
+            available Monday to Friday from 9 AM to 5 PM.
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="faq">
+          <h3 class="faq-title">Do you offer international shipping?</h3>
+          <p class="faq-text">
+            Yes, we offer international shipping to most countries. Shipping
+            rates and times vary based on your location.
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
+    <script>
+      const toggles = document.querySelectorAll(".faq-toggle");
+
+      toggles.forEach((toggle) => {
+        toggle.addEventListener("click", () => {
+          toggle.parentNode.classList.toggle("active");
+        });
+      });
+    </script>
+    <footer class="section-footer">
+      <div class="footer-container container">
+          <div class="footer-section">
+              <h4>Shop</h4>
+              <ul>
+                  <li><a href="products.html">Men's Clothing</a></li>
+                  <li><a href="products.html">Women's Clothing</a></li>
+                  <li><a href="products.html">Accessories</a></li>
+                  <li><a href="products.html">Shoes</a></li>
+              </ul>
+          </div>
+          <div class="footer-section">
+              <h4>About Us</h4>
+              <ul>
+                  <li><a href="about.html">Our Story</a></li>
+                  <li><a href="about.html">Careers</a></li>
+                  <li><a href="about.html">Press</a></li>
+                  <li><a href="about.html">Blog</a></li>
+              </ul>
+          </div>
+          <div class="footer-section">
+              <h4>Customer Service</h4>
+              <ul>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="contact.html">FAQs</a></li>
+                  <li><a href="contact.html">Shipping</a></li>
+                  <li><a href="contact.html">Returns</a></li>
+              </ul>
+          </div>
+          <div class="footer-section">
+              <h4>Stay Connected</h4>
+              <ul>
+                  <li>
+                      <a href="https://www.linkedin.com" target="_blank">
+                          <i class="fab fa-linkedin"></i> Follow us on LinkedIn
+                      </a>
+                  </li>
+                  <li><a href="https://www.instagram.com">
+                      <i class="fab fa-instagram"></i> Follow us on Instagram
+                  </a></li>
+                  <li><a href="https://www.facebook.com">
+                      <i class="fab fa-facebook"></i> Like us on Facebook
+                  </a></li>
+                  <li><a href="https://twitter.com">
+                      <i class="fab fa-twitter"></i> Follow us on Twitter
+                  </a></li>
+              </ul>
+              
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2024 Your E-commerce Store. All rights reserved.</p>
+      </div>
+  </footer>
+  </body>
+</html>

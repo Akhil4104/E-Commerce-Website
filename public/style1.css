@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Urbanist", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;  
+  --buttonColor: #2a2c30;
+  --secondaryColor: #4b4f56;
+  --borderColor: #e3eaf0;
+  --backgroundColor: #f7f7f7;
+  --backgroundSecondary: #fefefe;
+  --textColor: #1e1f23;
+  --anchorColor: #535bf2;
+  --main-color: #535bf2;
+  --supporting-color: #ebf3fe;
+  --glow-color: hsl(186, 91%, 4%);
+}
+
+html {
+  font-size: 62.5%;
+  color: var(--textColor);
+}
+body {
+  margin: 0 auto;
+  padding: 0 32px;
+  min-width: 320px;
+  background-color: var(--backgroundColor);
+}
+.top_txt {
+  background-color: var(--buttonColor);
+  color: var(--backgroundColor);
+
+  & .head_txt p {
+    font-size: 1.5rem;
+  }
+
+  & .sing_in_up {
+    display: flex;
+    gap: 3.2rem;
+  }
+}
+
+p,
+li,
+a,
+label {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  color: var(--para-color);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #646cff;
+  text-decoration: none;
+  &:hover {
+    color: #535bf2;
+  }
+}
+
+::placeholder {
+  font-family: "Urbanist", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 142rem;
+  margin: 0 auto;
+  padding: 1.6rem 0.4rem;
+}
+.a:hover {
+  background-color:#273fa1;
+  cursor: pointer;
+}
+
+.btn:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--para-color);
+}  
+.navbar{
+  font-family:calibri; 
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.logo a{
+  font-size:35px;
+  font-weight:600;
+  color:#273fa1;
+}
+li{
+  list-style:none;
+  display: inline-block;
+}
+li a{
+  color: #273fa1;
+  font-size: 18px;
+  font-weight:bold;
+  margin-right: 25px;
+}
+form {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #007BFF;
+  margin-bottom: 20px;
+}
+
+/* Paragraph */
+p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Form inputs and labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+/* Textarea */
+textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+/* Submit button */
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.faq-container {
+max-width: 600px;
+margin: 0 auto;
+}
+
+.faq {
+background-color: transparent;
+border: 1px solid #9fa4a8;
+border-radius: 10px;
+margin: 20px 0;
+padding: 30px;
+position: relative;
+overflow: hidden;
+transition: 0.3s ease;
+}
+
+.faq.active {
+background-color: #fff;
+box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq.active::before,
+.faq.active::after {
+content: '\f075';
+font-family: 'Font Awesome 5 Free';
+color: #3498db;
+font-size: 7rem;
+position: absolute;
+opacity: 0.1;
+top: 20px;
+left: 20px;
+z-index: 0;
+}
+
+.faq.active::before {
+top: -10px;
+left: -30px;
+transform: rotateY(180deg);
+}
+
+.faq-title {
+margin: 0 35px 0 0;
+}
+
+.faq-text {
+display: none;
+margin: 30px 0 0;
+}
+
+.faq.active .faq-text {
+display: block;
+}
+
+.faq-toggle {
+background-color: transparent;
+border: 0;
+border-radius: 50%;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 16px;
+padding: 0;
+position: absolute;
+top: 30px;
+right: 30px;
+height: 30px;
+width: 30px;
+}
+
+.faq-toggle:focus {
+outline: 0;
+}
+
+.faq-toggle .fa-times {
+display: none;
+}
+
+.faq.active .faq-toggle .fa-times {
+color: #fff;
+display: block;
+}
+
+.faq.active .faq-toggle .fa-chevron-down {
+display: none;
+}
+
+.faq.active .faq-toggle {
+background-color: #9fa4a8;
+}
+.section-footer {
+  background-color: #333; /* Set background color for the footer */
+  color: #fff; /* Set text color for the footer */
+  padding: 3rem 0; /* Add padding for better spacing */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Align sections evenly */
+}
+
+.footer-section {
+  flex: 1; /* Allow sections to grow equally */
+}
+
+.footer-section h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  color: #fff; /* Set link color */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Add smooth transition */
+}
+
+.footer-section ul li a:hover {
+  color: #ff6600; /* Change link color on hover */
+}
